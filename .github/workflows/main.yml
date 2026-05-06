@@ -48,7 +48,7 @@ jobs:
       # Upload de Artefato para o próximo job
       - name: Upload artifact
         if: matrix.python-version == '3.11' # Apenas uma versão gera o artefato final
-        uses: actions/upload-pages-artifact@v2
+        uses: actions/upload-pages-artifact@v4
         with:
           path: ./public
 
@@ -65,4 +65,4 @@ jobs:
 
     steps:
       - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v2 # Download e publicação do artefato
+        uses: actions/deploy-pages@v4 # Download e publicação do artefato
