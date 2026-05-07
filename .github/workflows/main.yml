@@ -13,6 +13,11 @@ on:
   schedule:
     - cron: '0 0 * * 0'
 
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 jobs:
   # Job de Validação e Build 
   build_site:
