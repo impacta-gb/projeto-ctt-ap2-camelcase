@@ -11,5 +11,3 @@ Criada pelo Google, Go combina a performance de linguagens compiladas com a faci
 3. Após instalar, abra seu terminal e digite:
    ```bash
    go version
-
-   
