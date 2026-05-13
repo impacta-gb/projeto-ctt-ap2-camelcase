@@ -36,6 +36,7 @@ func main() {
 }
 ```
 
+
 ## O que o código faz?
 
 Esse código controla o fluxo do programa. Ele decide se uma mensagem deve ser exibida (condicionais) ou se uma ação deve ser repetida várias vezes (laços).
@@ -61,4 +62,6 @@ Você pode usar uma "inicialização curta" dentro do if. Exemplo: if v := calcu
 ## Resumo
 
 As estruturas de controle são os "semáforos" e "rotatórias" do seu código. O if decide o caminho, o for faz a volta e o switch escolhe a melhor saída. Tudo isso sem parênteses e sem complicação.
+
+
 
