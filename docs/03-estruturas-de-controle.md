@@ -36,7 +36,6 @@ func main() {
 }
 ```
 
-
 ## O que o código faz?
 
 Esse código controla o fluxo do programa. Ele decide se uma mensagem deve ser exibida (condicionais) ou se uma ação deve ser repetida várias vezes (laços).
