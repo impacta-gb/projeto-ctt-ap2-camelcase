@@ -36,11 +36,11 @@ func main() {
 }
 ```
 
-## O que o código faz?
+### O que o código faz?
 
 Esse código controla o fluxo do programa. Ele decide se uma mensagem deve ser exibida (condicionais) ou se uma ação deve ser repetida várias vezes (laços).
 
-## Por que usar?
+### Por que usar?
 
 Tomada de Decisão: Sem o if, o programa seria apenas uma sequência linear; com ele, o software pode reagir a diferentes situações.
 
