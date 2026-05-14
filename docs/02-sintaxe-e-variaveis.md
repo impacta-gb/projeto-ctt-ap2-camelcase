@@ -29,11 +29,11 @@ func main() {
 }
 ```
 
-## O que o código faz? 
+### O que o código faz? 
 
 O código reserva espaços específicos na memória do computador (variáveis) para armazenar textos e números. Ele permite que o programa recupere e manipule esses dados durante a execução.
 
-## Por que usar?
+### Por que usar?
 
 Segurança de Tipos: Por ser rigoroso, o Go evita que você cometa erros de lógica, como tentar subtrair um texto de um número.
 
@@ -84,11 +84,11 @@ func main() {
 }
 ```
 
-## O que ocódigo faz?
+### O que o código faz?
 
 Ele aloca um espaço na memória RAM do computador para guardar informações específicas (textos ou números) sob um nome que você escolhe.
 
-## Por que usar?
+### Por que usar?
 
 Manipulação de Dados: Variáveis permitem que você receba uma entrada do usuário, processe esse dado e exiba um resultado.
 
