@@ -1,4 +1,6 @@
-# Arrays em Go
+# Arrays, Slices e Maps em Go 
+
+## Arrays em Go
 
 ## O que são Arrays
 
@@ -175,4 +177,4 @@ Mapa Não Inicializado: Se você declarar apenas var m map[string]int (sem o mak
 
 ## Resumo
 
-O Map é o "Dicionário" do Go. Você fornece uma palavra-chave e ele te entrega o significado instantaneamente. É a ferramenta perfeita para quando você precisa organizar dados de forma que a recuperação seja rápida, direta e baseada em nomes ou IDs, em vez de posições em uma fila.
+O Map é o "Dicionário" do Go. Você fornece uma palavra-chave e ele te entrega o significado instantaneamente. É a ferramenta perfeita para quando você precisa organizar dados de forma que a recuperação seja rápida, direta e baseada em nomes ou IDs, em vez de posições em uma fila.    
