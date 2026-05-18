@@ -39,11 +39,11 @@ Cria listas organizadas na memória. Ele reserva espaços numerados (índices) o
 
 ## Por que usar?
 
-Organização: Em vez de criar dez variáveis diferentes para dez nomes, você utiliza um único Array que agrupa todos eles sob um mesmo contexto.
+- Organização: Em vez de criar dez variáveis diferentes para dez nomes, você utiliza um único Array que agrupa todos eles sob um mesmo contexto.
 
-Performance: Como o tamanho do Array é fixo e conhecido pelo computador desde o início, o acesso aos dados é extremamente rápido.
+- Performance: Como o tamanho do Array é fixo e conhecido pelo computador desde o início, o acesso aos dados é extremamente rápido.
 
-Segurança: O compilador garante que você não misture tipos diferentes (como tentar colocar um texto em um array de números), mantendo a integridade dos dados do seu sistema.
+- Segurança: O compilador garante que você não misture tipos diferentes (como tentar colocar um texto em um array de números), mantendo a integridade dos dados do seu sistema.
 
 !!! tip "Dica 💡"
 
@@ -97,11 +97,11 @@ Cria listas que podem expandir conforme a necessidade do programa. Ele utiliza a
 
 ### Por que usar?
 
-Flexibilidade: Você não precisa saber quantos itens terá na lista logo de cara. O Slice cresce conforme o seu programa recebe novos dados, como usuários se cadastrando em um site.
+- Flexibilidade: Você não precisa saber quantos itens terá na lista logo de cara. O Slice cresce conforme o seu programa recebe novos dados, como usuários se cadastrando em um site.
 
-Praticidade: Go oferece funções prontas (como append, copy e recursos de fatiamento) que tornam a manipulação de listas muito mais simples do que em arrays tradicionais.
+- Praticidade: Go oferece funções prontas (como append, copy e recursos de fatiamento) que tornam a manipulação de listas muito mais simples do que em arrays tradicionais.
 
-Eficiência: Por baixo dos panos, o Slice aponta para um Array, mas gerencia tudo de forma inteligente para que você não precise lidar com a complexidade de alocação de memória manualmente.
+- Eficiência: Por baixo dos panos, o Slice aponta para um Array, mas gerencia tudo de forma inteligente para que você não precise lidar com a complexidade de alocação de memória manualmente.
 
 !!! tip "Dica 💡"
 
