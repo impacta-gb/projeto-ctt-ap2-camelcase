@@ -47,14 +47,14 @@ Gestão de Versões: Você tem controle total sobre quais versões das bibliotec
 
 Liberdade de Pastas: Antes do Go Modules, você era obrigado a criar projetos em pastas específicas do sistema. Com ele, você pode criar seu projeto em qualquer lugar do seu computador.
 
-## Dica 💡
+!!! tip "Dica 💡"
 
-Sempre que você terminar de escrever seu código ou antes de fazer um commit, rode o comando go mod tidy. Ele faz uma "limpeza geral": remove bibliotecas que você parou de usar e baixa as que você acabou de importar, deixando seu arquivo go.mod sempre impecável.
+    Sempre que você terminar de escrever seu código ou antes de fazer um commit, rode o comando go mod tidy. Ele faz uma "limpeza geral": remove bibliotecas que você parou de usar e baixa as que você acabou de importar, deixando seu arquivo go.mod sempre impecável.
 
-## Alerta ⚠️
-Arquivo go.sum: Nunca apague o arquivo go.sum. Ele guarda as assinaturas de segurança das bibliotecas. Se ele for alterado ou excluído, o Go pode impedir o download das dependências por segurança.
+!!! warning "Alerta ⚠️"
+    Arquivo go.sum: Nunca apague o arquivo go.sum. Ele guarda as assinaturas de segurança das bibliotecas. Se ele for alterado ou excluído, o Go pode impedir o download das dependências por segurança.
 
-Nome do Módulo: Se você pretende subir seu código para o GitHub, o ideal é iniciar o módulo com o caminho do repositório, por exemplo: go mod init github.com/seu-usuario/nome-do-repo. Isso facilita a importação por outras pessoas.
+    Nome do Módulo: Se você pretende subir seu código para o GitHub, o ideal é iniciar o módulo com o caminho do repositório, por exemplo: go mod init github.com/seu-usuario/nome-do-repo. Isso facilita a importação por outras pessoas.
 
 ## Resumo
 O Go Modules é o "RG" e a "Lista de Compras" do seu projeto. Ele diz quem o seu projeto é e de quais ferramentas externas ele precisa para funcionar. É o que transforma uma simples pasta de arquivos em um projeto profissional, seguro e pronto para ser compartilhado com o mundo.

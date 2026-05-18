@@ -64,11 +64,11 @@ Ganho de Performance: Em vez de esperar uma tarefa terminar para começar outra 
 
 Simplicidade Absoluta: Você não precisa configurar bibliotecas complexas de gerenciamento de threads. Basta digitar a palavra **go** antes de qualquer função e o Go cuida de todo o resto.
 
-## Dica 💡
+!!! tip "Dica 💡"
 
-**Use Funções Anônimas para tarefas rápidas**
+	**Use Funções Anônimas para tarefas rápidas**
 
-Você não precisa necessariamente declarar uma função com nome usando **func** fora da **main** apenas para criar uma Goroutine. É muito comum e prático em Go disparar blocos de código na hora usando funções anônimas (clausuras):
+	Você não precisa necessariamente declarar uma função com nome usando **func** fora da **main** apenas para criar uma Goroutine. É muito comum e prático em Go disparar blocos de código na hora usando funções anônimas (clausuras):
 
 ```go
 go func() {
@@ -76,11 +76,11 @@ go func() {
 }() // Esses parênteses no final servem para executar a função imediatamente
 ```
 
-## Alerta ⚠️
+!!! warning "Alerta ⚠️"
 
-**Cuidado com o fechamento prematuro da **main** e com o "Garbage" de memória!**
+	**Cuidado com o fechamento prematuro da **main** e com o "Garbage" de memória!**
 
-O uso de **time.Sleep** no final do código (como fizemos no exemplo) serve **apenas para fins didáticos**. Em sistemas reais, você nunca deve adivinhar o tempo que uma tarefa vai levar. Se a função **main** terminar sua execução, ela fechará o programa imediatamente, matando todas as outras Goroutines pela metade sem que elas terminem o trabalho.
+	O uso de **time.Sleep** no final do código (como fizemos no exemplo) serve **apenas para fins didáticos**. Em sistemas reais, você nunca deve adivinhar o tempo que uma tarefa vai levar. Se a função **main** terminar sua execução, ela fechará o programa imediatamente, matando todas as outras Goroutines pela metade sem que elas terminem o trabalho.
 
 ## Resumo
 

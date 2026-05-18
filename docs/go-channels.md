@@ -94,11 +94,11 @@ func main() {
 
 Evita que você tenha que adivinhar quantas mensagens vai receber. Além disso, usar o **close** protege seu programa contra travamentos (Deadlocks), garantindo que nenhuma leitura vai ficar esperando dados para sempre.
 
-## Dica 💡
+!!! tip "Dica 💡"
 
-**Use canais unidirecionais para aumentar a segurança do código**
+	**Use canais unidirecionais para aumentar a segurança do código**
 
-Quando você passa um canal como argumento para uma função, você pode dizer ao Go se essa função vai apenas enviar ou apenas receber dados. Isso evita bugs onde uma função altera o canal sem querer.
+	Quando você passa um canal como argumento para uma função, você pode dizer ao Go se essa função vai apenas enviar ou apenas receber dados. Isso evita bugs onde uma função altera o canal sem querer.
 
 ```go
 // Esta função apenas RECEBE dados do canal (Somente Leitura)
@@ -107,11 +107,11 @@ func consumir(canal <-chan string) {
 }
 ```
 
-## Alerta ⚠️
+!!! warning "Alerta ⚠️"
 
-**Nunca envie dados para um canal fechado!**
+	**Nunca envie dados para um canal fechado!**
 
-Embora ler de um canal fechado seja seguro (ele apenas retorna o valor padrão do tipo), tentar enviar qualquer dado para um canal que já foi encerrado pelo comando **close()** vai quebrar o seu programa imediatamente com um erro de **panic: send on closed channel**. A regra é clara: quem envia é quem fecha.
+	Embora ler de um canal fechado seja seguro (ele apenas retorna o valor padrão do tipo), tentar enviar qualquer dado para um canal que já foi encerrado pelo comando **close()** vai quebrar o seu programa imediatamente com um erro de **panic: send on closed channel**. A regra é clara: quem envia é quem fecha.
 
 ## Resumo
 

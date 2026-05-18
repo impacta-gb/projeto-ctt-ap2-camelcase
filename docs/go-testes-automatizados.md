@@ -140,17 +140,17 @@ func TestSomaEmMassa(t *testing.T) {
 
 É o padrão absoluto da comunidade Go. Evita a duplicação de código de validação (os **if/else** de erro) e permite adicionar dezenas de novos cenários de teste apenas adicionando uma nova linha de texto na struct, mantendo o código limpo e escalável.
 
-## Dica 💡
+!!! tip "Dica 💡"
 
-**Use go test -v para ver os detalhes**
+	**Use go test -v para ver os detalhes**
 
-O comando padrão é muito econômico. Adicionando a flag **-v** (verbose), o Go mostra o nome de cada cenário testado e o tempo exato que ele levou para rodar.
+	O comando padrão é muito econômico. Adicionando a flag **-v** (verbose), o Go mostra o nome de cada cenário testado e o tempo exato que ele levou para rodar.
 
-## Alerta ⚠️
+!!! warning "Alerta ⚠️"
 
-**Cuidado com o Cache do Go!**
+	**Cuidado com o Cache do Go!**
 
-Se o código não mudou, o Go pode reaproveitar o resultado do teste anterior para economizar tempo (mostrando **(cached)**). Se o seu teste depende de coisas externas (como a hora do sistema), use **go** **test -count=1** para forçar o Go a rodar o teste de verdade.
+	Se o código não mudou, o Go pode reaproveitar o resultado do teste anterior para economizar tempo (mostrando **(cached)**). Se o seu teste depende de coisas externas (como a hora do sistema), use **go** **test -count=1** para forçar o Go a rodar o teste de verdade.
 
 ## Resumo
 

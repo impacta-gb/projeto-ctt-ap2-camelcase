@@ -48,15 +48,13 @@ Automação: O for permite processar grandes listas de dados ou repetir tarefas 
 
 Simplicidade: Go não possui while ou do-while, o que reduz a curva de aprendizado e torna o código de todos os desenvolvedores muito parecido.
 
-## Dica 💡
+!!! tip "Dica 💡"
+    Você pode usar uma "inicialização curta" dentro do if. Exemplo: if v := calcular(); v > 10 { ... }. Isso mantém a variável v limitada apenas àquele bloco, limpando a memória logo depois.
 
-Você pode usar uma "inicialização curta" dentro do if. Exemplo: if v := calcular(); v > 10 { ... }. Isso mantém a variável v limitada apenas àquele bloco, limpando a memória logo depois.
-
-## Alerta ⚠️
-
- Chaves: Em Go, a abertura de chaves { deve estar na mesma linha que o if ou for. Se você colocar a chave na linha de baixo, o compilador dará erro.
-
- Loop Infinito: Se você escrever apenas for { ... } sem nenhuma condição, o programa rodará para sempre. Certifique-se de ter um break ou uma condição de saída.
+!!! warning "Alerta ⚠️"
+    Chaves: Em Go, a abertura de chaves { deve estar na mesma linha que o if ou for. Se você colocar a chave na linha de baixo, o compilador dará erro.
+    
+    Loop Infinito: Se você escrever apenas for { ... } sem nenhuma condição, o programa rodará para sempre. Certifique-se de ter um break ou uma condição de saída.
 
 ## Resumo
 

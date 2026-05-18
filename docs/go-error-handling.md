@@ -178,17 +178,17 @@ A função **podePanicar** dispara intencionalmente um estado de choque no progr
 
 Deve ser usado estritamente para segurança interna em pontos críticos de servidores (como roteadores HTTP), garantindo que um erro bizarro ou inesperado em uma requisição de um único usuário não derrube o sistema inteiro para todos os outros.
 
-## Dica 💡
+!!! tip "Dica 💡"
 
-**Trate o erro imediatamente e limpe o caminho**
+    **Trate o erro imediatamente e limpe o caminho**
 
-Faça a checagem **if err != nil** logo na linha seguinte à chamada da função. Trate a falha (exiba a mensagem ou faça o **return**) para que o restante do seu código possa rodar livre de preocupações, mantendo o fluxo principal limpo e sem recuos (identações) desnecessários.
+    Faça a checagem **if err != nil** logo na linha seguinte à chamada da função. Trate a falha (exiba a mensagem ou faça o **return**) para que o restante do seu código possa rodar livre de preocupações, mantendo o fluxo principal limpo e sem recuos (identações) desnecessários.
 
-## Alerta ⚠️
+!!! warning "Alerta ⚠️"
 
-**Não use Panic como se fosse Exception!**
+    **Não use Panic como se fosse Exception!**
 
-O mecanismo de **panic/recover** lembra o **try/catch** de outras linguagens, mas ele não deve ser usado para erros comuns do dia a dia (como uma senha errada ou um arquivo não encontrado). Use o **panic** apenas para situações catastróficas onde o programa realmente não tem condições de continuar rodando, como a falta de uma configuração crítica na inicialização do sistema.
+    O mecanismo de **panic/recover** lembra o **try/catch** de outras linguagens, mas ele não deve ser usado para erros comuns do dia a dia (como uma senha errada ou um arquivo não encontrado). Use o **panic** apenas para situações catastróficas onde o programa realmente não tem condições de continuar rodando, como a falta de uma configuração crítica na inicialização do sistema.
 
 ## Resumo
 

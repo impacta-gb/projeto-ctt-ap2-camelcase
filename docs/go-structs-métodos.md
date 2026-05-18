@@ -39,13 +39,13 @@ Facilidade de Transporte: Se você precisar enviar os dados dessa pessoa para ou
 
 Padrão de Mercado: É a forma padrão e mais eficiente de representar entidades(Usuários, Produtos, Pedidos) em sistemas modernos e APIs.
 
-## Dica 💡
+!!! tip "Dica 💡"
 
-As structs são usadas o tempo todo para enviar dados para a internet (JSON). O Go permite colocar "tags" nos campos para dizer como eles devem ser chamados lá fora.
+    As structs são usadas o tempo todo para enviar dados para a internet (JSON). O Go permite colocar "tags" nos campos para dizer como eles devem ser chamados lá fora.
 
-## Alerta ⚠️
+!!! warning "Alerta ⚠️"
 
-Quando você passa uma struct para uma função, elas são copiadas por padrão, o Go não usa a original. Se quiser mudar o original ou economizar memória, use um **Ponteiro (*)**. É como dar a chave da casa original em vez de construir uma réplica.
+    Quando você passa uma struct para uma função, elas são copiadas por padrão, o Go não usa a original. Se quiser mudar o original ou economizar memória, use um **Ponteiro (*)**. É como dar a chave da casa original em vez de construir uma réplica.
 
 ## Resumo
 
@@ -85,21 +85,21 @@ Encapsulamento: Você agrupa o comportamento junto com o dado. Se uma **Pessoa**
 
 Organização: Evita que você tenha centenas de funções soltas no código. Você sabe exatamente quais ações cada tipo de dado pode realizar.
 
-## Dica 💡
+!!! tip "Dica 💡"
 
-Use **nome curtos**
+    Use **nome curtos**
 
-No Go, o nome do receiver (o **p** no exemplo) deve ser curto, geralmente a primeira letra do tipo. Evite nomes longos como **self** ou **this**, comuns em outras linguagens. Isso mantém o código limpo e no padrão da comunidade. 
+    No Go, o nome do receiver (o **p** no exemplo) deve ser curto, geralmente a primeira letra do tipo. Evite nomes longos como **self** ou **this**, comuns em outras linguagens. Isso mantém o código limpo e no padrão da comunidade. 
 
-## Alerta ⚠️
+!!! warning "Alerta ⚠️"
 
-**Receiver de Valor vs .Ponteiro:**
+    **Receiver de Valor vs .Ponteiro:**
 
-Se você usar **(p Pessoa)**, o método recebe uma **cópia** e não consegue alterar os dados da pessoa original (ex: mudar a idade).
+    Se você usar **(p Pessoa)**, o método recebe uma **cópia** e não consegue alterar os dados da pessoa original (ex: mudar a idade).
 
-Se você usar **(p Pessoa)**, o método recebe um **ponteiro** e consegue modificar os dados originais.
+    Se você usar **(p Pessoa)**, o método recebe um **ponteiro** e consegue modificar os dados originais.
 
-Na dúvida, use ponteiros para evitar cópias desnecessárias na memória. 
+    Na dúvida, use ponteiros para evitar cópias desnecessárias na memória. 
 
 ## Resumo
 
