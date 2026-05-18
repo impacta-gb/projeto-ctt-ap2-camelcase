@@ -13,10 +13,10 @@
       
       
       
-        <link rel="prev" href="./..">
+        <link rel="prev" href="../go-error-handling/">
       
       
-        <link rel="next" href="../01-introducao-e-instalacao/">
+        <link rel="next" href="../go-channels/">
       
       
         
@@ -27,7 +27,7 @@
     
     
       
-        <title>Markdown in 5min - Documentation</title>
+        <title>Concorrência I: Goroutines em Go - Documentation</title>
       
     
     
@@ -83,7 +83,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#markdown-in-5min" class="md-skip">
+        <a href="#concorrencia-i-goroutines-em-go" class="md-skip">
           Skip to content
         </a>
       
@@ -119,7 +119,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Markdown in 5min
+              Concorrência I: Goroutines em Go
             
           </span>
         </div>
@@ -241,38 +241,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22.27 19.385H1.73A1.73 1.73 0 0 1 0 17.655V6.345a1.73 1.73 0 0 1 1.73-1.73h20.54A1.73 1.73 0 0 1 24 6.345v11.308a1.73 1.73 0 0 1-1.73 1.731zM5.769 15.923v-4.5l2.308 2.885 2.307-2.885v4.5h2.308V8.078h-2.308l-2.307 2.885-2.308-2.885H3.46v7.847zM21.232 12h-2.309V8.077h-2.307V12h-2.308l3.461 4.039z"/></svg>
-  
-  <span class="md-ellipsis">
-    
-  
-  Markdown in 5min
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="././" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../markdown/" class="md-nav__link">
         
   
   
@@ -289,148 +261,6 @@
   
 
       </a>
-      
-        
-
-
-<nav class="md-nav md-nav--secondary" aria-label="On this page">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      On this page
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#headers" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Headers
-      </span>
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#text-formatting" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Text formatting
-      </span>
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#links-and-images" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Links and images
-      </span>
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#lists" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Lists
-      </span>
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#blockquotes" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Blockquotes
-      </span>
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#code-blocks" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Code blocks
-      </span>
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#tables" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Tables
-      </span>
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#horizontal-rule" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Horizontal rule
-      </span>
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#task-lists" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Task lists
-      </span>
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#escaping-characters" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Escaping characters
-      </span>
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#line-breaks" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Line breaks
-      </span>
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -595,10 +425,36 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../go-goroutines/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Concorrência I: Goroutines
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="././" class="md-nav__link md-nav__link--active">
         
   
   
@@ -613,6 +469,105 @@
   
 
       </a>
+      
+        
+
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#o-que-sao-goroutines" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        O que são Goroutines?
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="O que são Goroutines?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#por-que-elas-sao-tao-inovadoras" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Por que elas são tão inovadoras?
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exemplo-de-goroutines" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Exemplo de Goroutines
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Exemplo de Goroutines">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#o-que-o-codigo-faz" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        O que o código faz?
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#por-que-usar" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Por que usar?
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resumo" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Resumo
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -736,120 +691,77 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#headers" class="md-nav__link">
+  <a href="#o-que-sao-goroutines" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        Headers
+        O que são Goroutines?
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="O que são Goroutines?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#por-que-elas-sao-tao-inovadoras" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Por que elas são tão inovadoras?
       </span>
     </span>
   </a>
   
 </li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
-  <a href="#text-formatting" class="md-nav__link">
+  <a href="#exemplo-de-goroutines" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        Text formatting
+        Exemplo de Goroutines
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Exemplo de Goroutines">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#o-que-o-codigo-faz" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        O que o código faz?
       </span>
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#links-and-images" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#por-que-usar" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        Links and images
+        Por que usar?
       </span>
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#lists" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Lists
-      </span>
-    </span>
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#blockquotes" class="md-nav__link">
+  <a href="#resumo" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        Blockquotes
-      </span>
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#code-blocks" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Code blocks
-      </span>
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#tables" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Tables
-      </span>
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#horizontal-rule" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Horizontal rule
-      </span>
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#task-lists" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Task lists
-      </span>
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#escaping-characters" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Escaping characters
-      </span>
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#line-breaks" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Line breaks
+        Resumo
       </span>
     </span>
   </a>
@@ -879,80 +791,80 @@
                 
                   
 
-<h1 id="markdown-in-5min">Markdown in 5min<a class="headerlink" href="#markdown-in-5min" title="Permanent link">&para;</a></h1>
-<h2 id="headers">Headers<a class="headerlink" href="#headers" title="Permanent link">&para;</a></h2>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a># H1 Header
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>## H2 Header
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>### H3 Header
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>#### H4 Header
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>##### H5 Header
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>###### H6 Header
+<h1 id="concorrencia-i-goroutines-em-go">Concorrência I: Goroutines em Go<a class="headerlink" href="#concorrencia-i-goroutines-em-go" title="Permanent link">&para;</a></h1>
+<p>Em linguagens tradicionais, para executar tarefas simultaneamente, geralmente criamos Threads do sistema operacional, que são pesadas e consomem muita memória. Go resolve isso de forma brilhante com um conceito exclusivo: as <strong>Goroutines</strong>.</p>
+<h2 id="o-que-sao-goroutines">O que são Goroutines?<a class="headerlink" href="#o-que-sao-goroutines" title="Permanent link">&para;</a></h2>
+<p>Uma Goroutine é, essencialmente, uma <strong>função que executa de forma independente e concorrente</strong> em relação ao resto do programa.</p>
+<p>Pense nelas como "threads de peso-pena". Elas não são threads reais do sistema operacional; elas são gerenciadas pelo próprio ecossistema de execução do Go (Go Runtime).</p>
+<h3 id="por-que-elas-sao-tao-inovadoras">Por que elas são tão inovadoras?<a class="headerlink" href="#por-que-elas-sao-tao-inovadoras" title="Permanent link">&para;</a></h3>
+<p><strong>Consumo Mínimo de Memória:</strong> Enquanto uma thread tradicional do sistema operacional costuma iniciar consumindo cerca de 1 MB a 2 MB de memória, uma Goroutine começa precisando de míseros <strong>2 KB</strong>.</p>
+<p><strong>Criação em Massa:</strong> Devido ao custo quase zero, você pode criar dezenas de milhares (ou até milhões) de Goroutines rodando ao mesmo tempo no seu computador sem travar o sistema.</p>
+<p><strong>Gerenciamento Inteligente:</strong> O Go possui um mecanismo interno que distribui essas milhares de Goroutines de forma automática entre os núcleos do seu processador. Se uma Goroutine ficar travada esperando uma resposta da internet, o Go coloca outra para rodar no lugar dela instantaneamente.</p>
+<h2 id="exemplo-de-goroutines">Exemplo de Goroutines<a class="headerlink" href="#exemplo-de-goroutines" title="Permanent link">&para;</a></h2>
+<div class="language-go highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">package</span><span class="w"> </span><span class="nx">main</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="kn">import</span><span class="w"> </span><span class="p">(</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">    </span><span class="s">&quot;fmt&quot;</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">    </span><span class="s">&quot;time&quot;</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="p">)</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="kd">func</span><span class="w"> </span><span class="nx">exibirMensagem</span><span class="p">(</span><span class="nx">texto</span><span class="w"> </span><span class="kt">string</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mi">3</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">++</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">        </span><span class="nx">fmt</span><span class="p">.</span><span class="nx">Printf</span><span class="p">(</span><span class="s">&quot;%s: %d\n&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">texto</span><span class="p">,</span><span class="w"> </span><span class="nx">i</span><span class="p">)</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">        </span><span class="nx">time</span><span class="p">.</span><span class="nx">Sleep</span><span class="p">(</span><span class="mi">100</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="nx">time</span><span class="p">.</span><span class="nx">Millisecond</span><span class="p">)</span><span class="w"> </span><span class="c1">// Simula uma tarefa que leva um tempinho</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="p">}</span>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="kd">func</span><span class="w"> </span><span class="nx">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="w">    </span><span class="c1">// 1. Chamada comum (síncrona): o programa espera terminar para ir para a próxima linha</span>
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="w">    </span><span class="nx">exibirMensagem</span><span class="p">(</span><span class="s">&quot;Função Normal&quot;</span><span class="p">)</span>
+</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>
+</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="w">    </span><span class="c1">// 2. Chamada com Goroutine (concorrente): o programa dispara a função e segue em frente na hora</span>
+</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="w">    </span><span class="k">go</span><span class="w"> </span><span class="nx">exibirMensagem</span><span class="p">(</span><span class="s">&quot;Goroutine 1&quot;</span><span class="p">)</span>
+</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>
+</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a><span class="w">    </span><span class="c1">// 3. Outra Goroutine rodando ao mesmo tempo</span>
+</span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a><span class="w">    </span><span class="k">go</span><span class="w"> </span><span class="nx">exibirMensagem</span><span class="p">(</span><span class="s">&quot;Goroutine 2&quot;</span><span class="p">)</span>
+</span><span id="__span-0-24"><a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a>
+</span><span id="__span-0-25"><a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a><span class="w">    </span><span class="c1">// Pausa necessária na main para dar tempo das Goroutines executarem antes do programa fechar</span>
+</span><span id="__span-0-26"><a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a><span class="w">    </span><span class="nx">time</span><span class="p">.</span><span class="nx">Sleep</span><span class="p">(</span><span class="mi">500</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="nx">time</span><span class="p">.</span><span class="nx">Millisecond</span><span class="p">)</span>
+</span><span id="__span-0-27"><a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a><span class="w">    </span><span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;Fim do programa!&quot;</span><span class="p">)</span>
+</span><span id="__span-0-28"><a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a><span class="p">}</span>
 </span></code></pre></div>
-<h2 id="text-formatting">Text formatting<a class="headerlink" href="#text-formatting" title="Permanent link">&para;</a></h2>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>**bold text**
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>*italic text*
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>***bold and italic***
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>~~strikethrough~~
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>`inline code`
+<h3 id="o-que-o-codigo-faz">O que o código faz?<a class="headerlink" href="#o-que-o-codigo-faz" title="Permanent link">&para;</a></h3>
+<ol>
+<li>
+<p>Execução Sequencial: O programa começa chamando <strong>exibirMensagem("Função Normal")</strong>. Como é uma chamada comum, o código trava ali e imprime os números de 1 a 3 antes de avançar.</p>
+</li>
+<li>
+<p>A Palavra-Chave <strong>go</strong>: Quando o Go encontra <strong>go exibirMensagem(...)</strong>, ele não espera a função terminar. Ele cria uma nova Goroutine em segundo plano para rodar aquela função e passa imediatamente para a linha de baixo.</p>
+</li>
+<li>
+<p>Execução Simultânea: As linhas "Goroutine 1" e "Goroutine 2" rodam ao mesmo tempo. No terminal, você verá os resultados delas se misturarem, provando que estão competindo pela tela simultaneamente.</p>
+</li>
+<li>
+<p>A Espera na Main: A função <strong>main</strong> também é uma Goroutine (a principal). Se ela chegar ao fim, o programa morre e mata todas as outras de surpresa. O <strong>time.Sleep</strong> no final serve apenas para segurar a porta aberta para as outras terminarem o trabalho.</p>
+</li>
+</ol>
+<h3 id="por-que-usar">Por que usar?<a class="headerlink" href="#por-que-usar" title="Permanent link">&para;</a></h3>
+<p>Ganho de Performance: Em vez de esperar uma tarefa terminar para começar outra (como baixar 10 imagens sequencialmente), você dispara 10 Goroutines e baixa todas ao mesmo tempo.</p>
+<p>Simplicidade Absoluta: Você não precisa configurar bibliotecas complexas de gerenciamento de threads. Basta digitar a palavra <strong>go</strong> antes de qualquer função e o Go cuida de todo o resto.</p>
+<div class="admonition tip">
+<p class="admonition-title">Dica 💡</p>
+<p><strong>Use Funções Anônimas para tarefas rápidas</strong></p>
+<p>Você não precisa necessariamente declarar uma função com nome usando <strong>func</strong> fora da <strong>main</strong> apenas para criar uma Goroutine. É muito comum e prático em Go disparar blocos de código na hora usando funções anônimas (clausuras):</p>
+</div>
+<div class="language-go highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">go</span><span class="w"> </span><span class="kd">func</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">    </span><span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;Rodando de dentro de uma função anônima!&quot;</span><span class="p">)</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="p">}()</span><span class="w"> </span><span class="c1">// Esses parênteses no final servem para executar a função imediatamente</span>
 </span></code></pre></div>
-<h2 id="links-and-images">Links and images<a class="headerlink" href="#links-and-images" title="Permanent link">&para;</a></h2>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>[Link text](https://example.com)
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>[Link with title](https://example.com &quot;Hover title&quot;)
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>![Alt text](image.jpg)
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>![Image with title](image.jpg &quot;Image title&quot;)
-</span></code></pre></div>
-<h2 id="lists">Lists<a class="headerlink" href="#lists" title="Permanent link">&para;</a></h2>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>Unordered:
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
-</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>- Item 1
-</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>- Item 2
-</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>  - Nested item
-</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>
-</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>Ordered:
-</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>
-</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>1. First item
-</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>2. Second item
-</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>3. Third item
-</span></code></pre></div>
-<h2 id="blockquotes">Blockquotes<a class="headerlink" href="#blockquotes" title="Permanent link">&para;</a></h2>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>&gt; This is a blockquote
-</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>&gt; Multiple lines
-</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>&gt;&gt; Nested quote
-</span></code></pre></div>
-<h2 id="code-blocks">Code blocks<a class="headerlink" href="#code-blocks" title="Permanent link">&para;</a></h2>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>```javascript
-</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>function hello() {
-</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>  console.log(&quot;Hello, world!&quot;);
-</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>}
-</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>```
-</span></code></pre></div>
-<h2 id="tables">Tables<a class="headerlink" href="#tables" title="Permanent link">&para;</a></h2>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>| Header 1 | Header 2 | Header 3 |
-</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>|----------|----------|----------|
-</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>| Row 1    | Data     | Data     |
-</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>| Row 2    | Data     | Data     |
-</span></code></pre></div>
-<h2 id="horizontal-rule">Horizontal rule<a class="headerlink" href="#horizontal-rule" title="Permanent link">&para;</a></h2>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>---
-</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>or
-</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>***
-</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>or
-</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>___
-</span></code></pre></div>
-<h2 id="task-lists">Task lists<a class="headerlink" href="#task-lists" title="Permanent link">&para;</a></h2>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>- [x] Completed task
-</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>- [ ] Incomplete task
-</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>- [ ] Another task
-</span></code></pre></div>
-<h2 id="escaping-characters">Escaping characters<a class="headerlink" href="#escaping-characters" title="Permanent link">&para;</a></h2>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>Use backslash to escape: \* \_ \# \`
-</span></code></pre></div>
-<h2 id="line-breaks">Line breaks<a class="headerlink" href="#line-breaks" title="Permanent link">&para;</a></h2>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>End a line with two spaces  
-</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>to create a line break.
-</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>
-</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>Or use a blank line for a new paragraph.
-</span></code></pre></div>
+<div class="admonition warning">
+<p class="admonition-title">Alerta ⚠️</p>
+<p><strong>Cuidado com o fechamento prematuro da **main</strong> e com o "Garbage" de memória!**</p>
+<p>O uso de <strong>time.Sleep</strong> no final do código (como fizemos no exemplo) serve <strong>apenas para fins didáticos</strong>. Em sistemas reais, você nunca deve adivinhar o tempo que uma tarefa vai levar. Se a função <strong>main</strong> terminar sua execução, ela fechará o programa imediatamente, matando todas as outras Goroutines pela metade sem que elas terminem o trabalho.</p>
+</div>
+<h2 id="resumo">Resumo<a class="headerlink" href="#resumo" title="Permanent link">&para;</a></h2>
+<p>As Goroutines tornam a concorrência incrivelmente simples: basta digitar <strong>go</strong> antes de uma função.</p>
+<p>Contudo, disparar tarefas ao mesmo tempo é só metade do caminho. O verdadeiro poder surge quando essas tarefas conversam e se sincronizam de forma segura. Para resolver essa comunicação sem gerar conflitos, o Go utiliza os <strong>Channels</strong>, que veremos a seguir.</p>
 
 
 
@@ -961,9 +873,6 @@
 
 
 
-
-  
-  
 
 
 
@@ -995,7 +904,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="./.." class="md-footer__link md-footer__link--prev" aria-label="Previous: Get started">
+          <a href="../go-error-handling/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Tratamento de Erros (Error Handling)">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-arrow-left" viewBox="0 0 24 24"><path d="m12 19-7-7 7-7M19 12H5"/></svg>
@@ -1005,20 +914,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Get started
+                Tratamento de Erros (Error Handling)
               </div>
             </div>
           </a>
         
         
           
-          <a href="../01-introducao-e-instalacao/" class="md-footer__link md-footer__link--next" aria-label="Next: Introdução e Instalação">
+          <a href="../go-channels/" class="md-footer__link md-footer__link--next" aria-label="Next: Concorrência II: Channels">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Introdução e Instalação
+                Concorrência II: Channels
               </div>
             </div>
             <div class="md-footer__button md-icon">

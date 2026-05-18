@@ -41,15 +41,14 @@ Performance: Como a sintaxe é simples e compilada, o computador processa as ins
 
 Legibilidade: A ausência de caracteres desnecessários torna o código mais fácil de ser revisado pelos seus colegas de grupo.
 
-## Dica 💡
+!!! tip "Dica 💡"
+    Utilize sempre nomes de variáveis que façam sentido (ex: precoProduto em vez de apenas p). Em Go, a clareza é prioridade sobre a brevidade.    
 
-Utilize sempre nomes de variáveis que façam sentido (ex: precoProduto em vez de apenas p). Em Go, a clareza é prioridade sobre a brevidade.
+!!! warning "Alerta ⚠️"
+    Variáveis Não Usadas: O compilador do Go é "bravo": se você declarar uma variável e não usá-la no código, o programa não vai compilar. Isso garante que seu software seja sempre limpo e econômico.
 
-## Alerta ⚠️
+    Operador Curto: Lembre-se que o := só funciona dentro de funções (como a main). Para declarar variáveis globais (fora das funções), você deve usar obrigatoriamente a palavra var.
 
-Variáveis Não Usadas: O compilador do Go é "bravo": se você declarar uma variável e não usá-la no código, o programa não vai compilar. Isso garante que seu software seja sempre limpo e econômico.
-
-Operador Curto: Lembre-se que o := só funciona dentro de funções (como a main). Para declarar variáveis globais (fora das funções), você deve usar obrigatoriamente a palavra var.
 
 ## Resumo
 
@@ -96,15 +95,13 @@ Legibilidade: Em vez de usar valores soltos no código, você usa nomes (como pr
 
 Consistência: Alterar o valor em um único lugar (na variável) atualiza automaticamente todas as partes do código que a utilizam.
 
-## Dica 💡
+!!! tip "Dica 💡"
+    Se você declarar uma variável e não der um valor a ela, ela não fica "nula" ou "lixo". Inteiros viram 0, strings viram "" (vazio) e booleanos viram false.
 
-Se você declarar uma variável e não der um valor a ela, ela não fica "nula" ou "lixo". Inteiros viram 0, strings viram "" (vazio) e booleanos viram false.
+!!! warning "Alerta ⚠️"
+    Você não pode mudar o tipo de uma variável depois de criada. Se idade foi definida como int, você nunca poderá guardar o texto "dezenove" nela.
 
-## Alerta ⚠️
- 
- Você não pode mudar o tipo de uma variável depois de criada. Se idade foi definida como int, você nunca poderá guardar o texto "dezenove" nela.
-
- Se você criar uma variável dentro de uma função e não usá-la em lugar nenhum, o compilador do Go impedirá a execução do programa até que você a remova ou a utilize.
+    Se você criar uma variável dentro de uma função e não usá-la em lugar nenhum, o compilador do Go impedirá a execução do programa até que você a remova ou a utilize.
 
 ## Resumo
 

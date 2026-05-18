@@ -45,15 +45,15 @@ Performance: Como o tamanho do Array é fixo e conhecido pelo computador desde o
 
 Segurança: O compilador garante que você não misture tipos diferentes (como tentar colocar um texto em um array de números), mantendo a integridade dos dados do seu sistema.
 
-## Dica 💡
+!!! tip "Dica 💡"
 
-Para saber o tamanho de um array de forma automática, use a função len(). Exemplo: fmt.Println(len(notas)). Isso é muito útil quando você precisa percorrer a lista usando um for sem precisar contar os itens manualmente.
+    Para saber o tamanho de um array de forma automática, use a função len(). Exemplo: fmt.Println(len(notas)). Isso é muito útil quando você precisa percorrer a lista usando um for sem precisar contar os itens manualmente.
 
-## Alerta ⚠️
+!!! warning "Alerta ⚠️"
 
-Índice Fora de Alcance: Se você tem um array de tamanho 3 e tenta acessar o índice [3], o programa dará erro. Lembre-se: a contagem sempre começa no 0 (os índices seriam 0, 1 e 2).
+    Índice Fora de Alcance: Se você tem um array de tamanho 3 e tenta acessar o índice `[3]`, o programa dará erro. Lembre-se: a contagem sempre começa no 0 (os índices seriam 0, 1 e 2).
 
-Tamanho Imutável: Um Array não cresce. Se você definir [5]int e precisar guardar um sexto número, terá que criar um novo array ou usar um Slice (que veremos depois).
+    Tamanho Imutável: Um Array não cresce. Se você definir `[5]int` e precisar guardar um sexto número, terá que criar um novo array ou usar um Slice (que veremos depois).
 
 ## Resumo
 
@@ -91,7 +91,7 @@ func main() {
 }
 ```
 
-### O que o código faz?
+### O que o código faz? 
 
 Cria listas que podem expandir conforme a necessidade do programa. Ele utiliza a função append para injetar novos dados na lista existente e mostra como "fatiar" uma estrutura maior para trabalhar apenas com uma parte específica dos dados.
 
@@ -103,15 +103,15 @@ Praticidade: Go oferece funções prontas (como append, copy e recursos de fatia
 
 Eficiência: Por baixo dos panos, o Slice aponta para um Array, mas gerencia tudo de forma inteligente para que você não precise lidar com a complexidade de alocação de memória manualmente.
 
-## Dica 💡
+!!! tip "Dica 💡"
 
-Sempre que usar o append, lembre-se de atribuir o resultado à própria variável: meuSlice = append(meuSlice, "novo"). Isso é necessário porque, se o Go precisar aumentar o espaço de memória, ele criará um novo endereço e você precisa garantir que sua variável aponte para ele.
+    Sempre que usar o append, lembre-se de atribuir o resultado à própria variável: meuSlice = append(meuSlice, "novo"). Isso é necessário porque, se o Go precisar aumentar o espaço de memória, ele criará um novo endereço e você precisa garantir que sua variável aponte para ele.
 
-## Alerta ⚠️
+!!! warning "Alerta ⚠️"
 
-Capacidade vs Tamanho: O len() mostra quantos itens estão no Slice agora, mas o Slice tem uma "capacidade" (cap) que pode ser maior. Se você fatiar um array, o Slice resultante ainda estará ligado ao array original. Alterar o Slice pode alterar o Array original!
+    Capacidade vs Tamanho: O len() mostra quantos itens estão no Slice agora, mas o Slice tem uma "capacidade" (cap) que pode ser maior. Se você fatiar um array, o Slice resultante ainda estará ligado ao array original. Alterar o Slice pode alterar o Array original!
 
-Slices Vazios: Um slice declarado sem valores (ex: var lista []int) começa como nil. Embora o append funcione nele, tentar acessar um índice diretamente (lista[0]) antes de adicionar algo causará um erro.
+    Slices Vazios: Um slice declarado sem valores (ex: var lista []int) começa como nil. Embora o append funcione nele, tentar acessar um índice diretamente (`lista[0]`) antes de adicionar algo causará um erro.
 
 ## Resumo
 
@@ -161,19 +161,19 @@ Associação Lógica: Facilita a organização de dados que possuem um identific
 
 Flexibilidade de Chaves: Você pode usar quase qualquer tipo comparável como chave (strings, ints, etc.), permitindo que você estruture seus dados da forma que fizer mais sentido para o problema.
 
-## Dica 💡
+!!! tip "Dica 💡"
 
-Para verificar se uma chave realmente existe no Map (evitando pegar um valor zero por erro), use a sintaxe de dois valores:
+    Para verificar se uma chave realmente existe no Map (evitando pegar um valor zero por erro), use a sintaxe de dois valores:
 
-valor, existe := idades["Marcos"].
+    valor, existe `:= idades["Marcos"]`.
 
-Se existe for false, significa que o Marcos não está no seu Map.
+    Se existe for false, significa que o Marcos não está no seu Map.
 
-## Alerta ⚠️
+!!! warning "Alerta ⚠️"
 
-Maps Não Ordenados: Diferente dos Slices, os Maps não guardam a ordem em que os itens foram inseridos. Se você imprimir o Map duas vezes, a ordem dos itens pode mudar. Nunca dependa da ordem em um Map.
+    Maps Não Ordenados: Diferente dos Slices, os Maps não guardam a ordem em que os itens foram inseridos. Se você imprimir o Map duas vezes, a ordem dos itens pode mudar. Nunca dependa da ordem em um Map.
 
-Mapa Não Inicializado: Se você declarar apenas var m map[string]int (sem o make ou sem valores), ele será nil. Tentar adicionar um item em um mapa nil fará o programa quebrar (panic). Use sempre o make para inicializar mapas vazios.
+    Mapa Não Inicializado: Se você declarar apenas `var m map[string]int` (sem o make ou sem valores), ele será nil. Tentar adicionar um item em um mapa nil fará o programa quebrar (panic). Use sempre o make para inicializar mapas vazios.
 
 ## Resumo
 
