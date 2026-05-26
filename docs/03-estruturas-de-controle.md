@@ -42,11 +42,11 @@ Esse código controla o fluxo do programa. Ele decide se uma mensagem deve ser e
 
 ### Por que usar?
 
-Tomada de Decisão: Sem o if, o programa seria apenas uma sequência linear; com ele, o software pode reagir a diferentes situações.
+- Tomada de Decisão: Sem o if, o programa seria apenas uma sequência linear; com ele, o software pode reagir a diferentes situações.
 
-Automação: O for permite processar grandes listas de dados ou repetir tarefas cansativas sem precisar escrever o mesmo código várias vezes.
+- Automação: O for permite processar grandes listas de dados ou repetir tarefas cansativas sem precisar escrever o mesmo código várias vezes.
 
-Simplicidade: Go não possui while ou do-while, o que reduz a curva de aprendizado e torna o código de todos os desenvolvedores muito parecido.
+- Simplicidade: Go não possui while ou do-while, o que reduz a curva de aprendizado e torna o código de todos os desenvolvedores muito parecido.
 
 !!! tip "Dica 💡"
     Você pode usar uma "inicialização curta" dentro do if. Exemplo: if v := calcular(); v > 10 { ... }. Isso mantém a variável v limitada apenas àquele bloco, limpando a memória logo depois.

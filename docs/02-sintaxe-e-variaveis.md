@@ -35,11 +35,11 @@ O código reserva espaços específicos na memória do computador (variáveis) p
 
 ### Por que usar?
 
-Segurança de Tipos: Por ser rigoroso, o Go evita que você cometa erros de lógica, como tentar subtrair um texto de um número.
+- Segurança de Tipos: Por ser rigoroso, o Go evita que você cometa erros de lógica, como tentar subtrair um texto de um número.
 
-Performance: Como a sintaxe é simples e compilada, o computador processa as instruções muito mais rápido do que em linguagens interpretadas.
+- Performance: Como a sintaxe é simples e compilada, o computador processa as instruções muito mais rápido do que em linguagens interpretadas.
 
-Legibilidade: A ausência de caracteres desnecessários torna o código mais fácil de ser revisado pelos seus colegas de grupo.
+- Legibilidade: A ausência de caracteres desnecessários torna o código mais fácil de ser revisado pelos seus colegas de grupo.
 
 !!! tip "Dica 💡"
     Utilize sempre nomes de variáveis que façam sentido (ex: precoProduto em vez de apenas p). Em Go, a clareza é prioridade sobre a brevidade.    
@@ -89,11 +89,11 @@ Ele aloca um espaço na memória RAM do computador para guardar informações es
 
 ### Por que usar?
 
-Manipulação de Dados: Variáveis permitem que você receba uma entrada do usuário, processe esse dado e exiba um resultado.
+- Manipulação de Dados: Variáveis permitem que você receba uma entrada do usuário, processe esse dado e exiba um resultado.
 
-Legibilidade: Em vez de usar valores soltos no código, você usa nomes (como precoTotal), o que torna o sistema compreensível para o seu grupo de trabalho.
+- Legibilidade: Em vez de usar valores soltos no código, você usa nomes (como precoTotal), o que torna o sistema compreensível para o seu grupo de trabalho.
 
-Consistência: Alterar o valor em um único lugar (na variável) atualiza automaticamente todas as partes do código que a utilizam.
+- Consistência: Alterar o valor em um único lugar (na variável) atualiza automaticamente todas as partes do código que a utilizam.
 
 !!! tip "Dica 💡"
     Se você declarar uma variável e não der um valor a ela, ela não fica "nula" ou "lixo". Inteiros viram 0, strings viram "" (vazio) e booleanos viram false.

@@ -33,11 +33,11 @@ func main() {
 
 ### Por que usar?
 
-Agrupamento Lógico: Em vez de ter três variáveis soltas (**nome1, idade1, prof1**), você tem um único objeto **p1** que contém tudo. Isso deixa o código muito mais limpo.
+- Agrupamento Lógico: Em vez de ter três variáveis soltas (**nome1, idade1, prof1**), você tem um único objeto **p1** que contém tudo. Isso deixa o código muito mais limpo.
 
-Facilidade de Transporte: Se você precisar enviar os dados dessa pessoa para outra parte do prigrama (uma função, por exemplo), você envia apenas a **Pessoa**, e não cada campo individuaalmente.
+- Facilidade de Transporte: Se você precisar enviar os dados dessa pessoa para outra parte do prigrama (uma função, por exemplo), você envia apenas a **Pessoa**, e não cada campo individuaalmente.
 
-Padrão de Mercado: É a forma padrão e mais eficiente de representar entidades(Usuários, Produtos, Pedidos) em sistemas modernos e APIs.
+- Padrão de Mercado: É a forma padrão e mais eficiente de representar entidades(Usuários, Produtos, Pedidos) em sistemas modernos e APIs.
 
 !!! tip "Dica 💡"
 
@@ -81,9 +81,9 @@ func main() {
 
 ### Por que usar?
 
-Encapsulamento: Você agrupa o comportamento junto com o dado. Se uma **Pessoa** sabe falar, o código que faz ela falar deve estar "dentro" dela.
+- Encapsulamento: Você agrupa o comportamento junto com o dado. Se uma **Pessoa** sabe falar, o código que faz ela falar deve estar "dentro" dela.
 
-Organização: Evita que você tenha centenas de funções soltas no código. Você sabe exatamente quais ações cada tipo de dado pode realizar.
+- Organização: Evita que você tenha centenas de funções soltas no código. Você sabe exatamente quais ações cada tipo de dado pode realizar.
 
 !!! tip "Dica 💡"
 

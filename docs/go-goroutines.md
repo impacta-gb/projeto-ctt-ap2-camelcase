@@ -10,11 +10,11 @@ Pense nelas como "threads de peso-pena". Elas não são threads reais do sistema
 
 ### Por que elas são tão inovadoras? 
 
-**Consumo Mínimo de Memória:** Enquanto uma thread tradicional do sistema operacional costuma iniciar consumindo cerca de 1 MB a 2 MB de memória, uma Goroutine começa precisando de míseros **2 KB**.
+- **Consumo Mínimo de Memória:** Enquanto uma thread tradicional do sistema operacional costuma iniciar consumindo cerca de 1 MB a 2 MB de memória, uma Goroutine começa precisando de míseros **2 KB**.
 
-**Criação em Massa:** Devido ao custo quase zero, você pode criar dezenas de milhares (ou até milhões) de Goroutines rodando ao mesmo tempo no seu computador sem travar o sistema.
+- **Criação em Massa:** Devido ao custo quase zero, você pode criar dezenas de milhares (ou até milhões) de Goroutines rodando ao mesmo tempo no seu computador sem travar o sistema.
 
-**Gerenciamento Inteligente:** O Go possui um mecanismo interno que distribui essas milhares de Goroutines de forma automática entre os núcleos do seu processador. Se uma Goroutine ficar travada esperando uma resposta da internet, o Go coloca outra para rodar no lugar dela instantaneamente.
+- **Gerenciamento Inteligente:** O Go possui um mecanismo interno que distribui essas milhares de Goroutines de forma automática entre os núcleos do seu processador. Se uma Goroutine ficar travada esperando uma resposta da internet, o Go coloca outra para rodar no lugar dela instantaneamente.
 
 ## Exemplo de Goroutines
 

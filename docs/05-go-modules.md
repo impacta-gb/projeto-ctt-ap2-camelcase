@@ -41,11 +41,11 @@ O comando go mod init cria um arquivo chamado go.mod, que registra o nome do seu
 
 ### Por que usar?
 
-Portabilidade: Permite que qualquer pessoa baixe seu projeto e instale todas as dependências necessárias com um único comando, sem que você precise enviar pastas pesadas de bibliotecas para o GitHub.
+- Portabilidade: Permite que qualquer pessoa baixe seu projeto e instale todas as dependências necessárias com um único comando, sem que você precise enviar pastas pesadas de bibliotecas para o GitHub.
 
-Gestão de Versões: Você tem controle total sobre quais versões das bibliotecas seu projeto usa, evitando bugs causados por atualizações automáticas de terceiros.
+- Gestão de Versões: Você tem controle total sobre quais versões das bibliotecas seu projeto usa, evitando bugs causados por atualizações automáticas de terceiros.
 
-Liberdade de Pastas: Antes do Go Modules, você era obrigado a criar projetos em pastas específicas do sistema. Com ele, você pode criar seu projeto em qualquer lugar do seu computador.
+- Liberdade de Pastas: Antes do Go Modules, você era obrigado a criar projetos em pastas específicas do sistema. Com ele, você pode criar seu projeto em qualquer lugar do seu computador.
 
 !!! tip "Dica 💡"
 
