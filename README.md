@@ -2,9 +2,6 @@
 
 Este repositório contém o projeto de documentação colaborativa sobre a linguagem Go , desenvolvido utilizando o gerador de sites estáticos Zensical. A publicação é totalmente automatizada via GitHub Actions e hospedada no GitHub Pages.
 
-[Nossa documentação](https://impacta-gb.github.io/projeto-ctt-ap2-camelcase/)
-
-
 ### **Integrantes do Grupo**
 
 Arthur Pimentel – 2500707\
