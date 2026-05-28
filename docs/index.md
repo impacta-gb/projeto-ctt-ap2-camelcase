@@ -19,7 +19,7 @@ Para garantir a estabilidade do projeto e simular um ambiente profissional de de
 
 ### **Proteção da Branch main**
 
-A branch main foi configurada com regras estritas de proteção ([Branch Protection Rules](https://github.com/impacta-gb/projeto-ctt-ap2-camelcase/settings/branches)) que impedem qualquer tipo de push direto. Toda e qualquer alteração deve, obrigatoriamente, passar pelo fluxo de validação e revisão.
+A branch main foi configurada com regras estritas de proteção (Branch Protection Rules) que impedem qualquer tipo de push direto. Toda e qualquer alteração deve, obrigatoriamente, passar pelo fluxo de validação e revisão.
 
 ### **Ciclo de Desenvolvimento de Conteúdo**
 
