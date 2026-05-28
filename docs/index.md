@@ -5,9 +5,12 @@ Este repositório contém o projeto de documentação colaborativa sobre a lingu
 
 ### **Integrantes do Grupo**
 
-Arthur Pimentel – 2500707\
-Gabriel Faria - 2500567\
-Henrique Gonçalves Costa - 2500110\
+Arthur Pimentel – 2500707
+
+Gabriel Faria - 2500567
+
+Henrique Gonçalves Costa - 2500110
+
 Isabelle Oliveira da Silva - 2501128
 
 
@@ -26,16 +29,16 @@ Cada página da documentação ou alteração de infraestrutura seguiu rigorosam
 ### **Estrutura do Conteúdo Desenvolvido**
 O site foi mapeado para cobrir tópicos essenciais da linguagem Go, divididos em módulos específicos:
 
-- [Introdução e Instalação](docs/01-introducao-e-instalacao.md)
-- [Sintaxe Básica e Variáveis](docs/02-sintaxe-e-variaveis.md)
-- [Estruturas de Controle (If, For, Switch)](docs/03-estruturas-de-controle.md)
-- [Coleções Avançadas (Arrays, Slices e Maps)](docs/04-arrays-slices-e-maps.md)
-- [Estruturas de Dados (Structs e Métodos)](docs/go-structs-métodos.md)
-- [Tratamento de Erros (Error Handling)](docs/go-error-handling.md)
-- [Concorrência I: Goroutines](docs/go-goroutines.md)
-- [Concorrência II: Channels](docs/go-channels.md)
-- [Gerenciamento de Pacotes (Go Modules)](docs/05-go-modules.md)
-- [Testes Automatizados em Go](docs/go-testes-automatizados.md)
+- Introdução e Instalação
+- Sintaxe Básica e Variáveis
+- Estruturas de Controle (If, For, Switch)
+- Coleções Avançadas (Arrays, Slices e Maps)
+- Estruturas de Dados (Structs e Métodos)
+- Tratamento de Erros (Error Handling)
+- Concorrência I: Goroutines
+- Concorrência II: Channels
+- Gerenciamento de Pacotes (Go Modules)
+- Testes Automatizados em Go
 
 ### **Arquitetura do Workflow (GitHub Actions)**
 O fluxo de automação é composto por dois jobs desacoplados e dependentes:
