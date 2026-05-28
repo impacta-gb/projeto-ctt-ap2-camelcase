@@ -2,6 +2,7 @@
 
 Este repositório contém o projeto de documentação colaborativa sobre a linguagem Go , desenvolvido utilizando o gerador de sites estáticos Zensical. A publicação é totalmente automatizada via GitHub Actions e hospedada no GitHub Pages.
 
+
 ### **Integrantes do Grupo**
 
 Arthur Pimentel – 2500707\
